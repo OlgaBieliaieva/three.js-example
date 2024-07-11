@@ -1,14 +1,10 @@
-import Image from "next/image";
-import dynamic from "next/dynamic";
-
+import NavMenu from "../components/common/navigation/NavMenu";
 import styles from "./page.module.css";
-
-const Scene = dynamic(() => import("@/components/animatedScroll/Scene"), { ssr: false });
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Scene />
-    </main>
+    <section className={styles.pageSection}>
+      <h1>Home page</h1>
+    </section>
   );
 }

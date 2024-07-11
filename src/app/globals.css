@@ -101,8 +101,23 @@ a {
   text-decoration: none;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  width: 100%;
 }

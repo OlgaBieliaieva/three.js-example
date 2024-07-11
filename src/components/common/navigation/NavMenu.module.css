@@ -1,0 +1,7 @@
+.navList {
+  width: 100%;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

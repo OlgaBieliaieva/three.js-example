@@ -14,17 +14,15 @@ export default function Model() {
   const scroll = useScroll();
 
   useEffect(() => {
-    console.log(actions);
-    //@ts-ignore
     actions["Experiment"].play().paused = true;
   }, []);
+
   useFrame(
     () =>
-      //@ts-ignore
       (actions["Experiment"].time =
-        //@ts-ignore
         (actions["Experiment"].getClip().duration * scroll.offset) / 4)
   );
+
   return (
     <group ref={group}>
       <primitive object={scene} />
